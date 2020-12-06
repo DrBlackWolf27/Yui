@@ -21,7 +21,7 @@
 ```
 
 **Yui** ❤
-![Header](../readme_doc/yui.jpg)
+![Header](./readme_doc/yui.jpg)
 
 
 Build in progress **v0.9**
@@ -43,7 +43,7 @@ Le site est actuellement en cours de création est donc peut réagir de manière
 > Y a peut-être un easter eag par là mais faut aller voir le code pour le trouver !
 
 ### Espace de login/register
-![Header](../readme_doc/qr.PNG)
+![Header](./readme_doc/qr.PNG)
 
 - Nous savons qu'un mot de passe peut être une difficulté pour certains utilisateurs. Ainsi, pour leur simplifier la vie tout en leur sécurisant leurs données personnelles, nous leur proposons un système complet de login par QR code.
 - Nous ne sommes pas suffisamment compétents pour pouvoir développer un espace de login normal sans option chelou. Nous nous excusons.
