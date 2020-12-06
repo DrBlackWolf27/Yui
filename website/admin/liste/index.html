@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="/admin/dashboard/style.css">
+
+</head>
+
+<body>
+    <section class='side-panel'>
+        <header>
+            <div class='title'>
+                <span>Admin</span>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href='/admin/dashboard' title='Dashboard'>
+                        <span>Dashboard</span>
+                        <i class='fa fa-compass'></i>
+                    </a>
+                </li>
+                <li>
+                    <a href='#' title='Items'>
+                        <span>Items</span>
+                        <i class='fa fa-list'></i>
+                    </a>
+                </li>
+                <li>
+                    <a href='#' title='Categories'>
+                        <span>Categories</span>
+                        <i class='fa fa-tags'></i>
+                    </a>
+                </li>
+                <li>
+                    <a href='#' title='Settings'>
+                        <span>Settings</span>
+                        <i class='fa fa-sliders'></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <section class='head-panel'>
+        <header>
+            <div class='top tools'>
+                <div class='container'>
+                    <div class='button-box'>
+                        <button id='toggle-menu'>
+                            <svg viewBox='0 0 53 53' x='0px' xmlns='http://www.w3.org/2000/svg' y='0px'>
+                                <path
+                                    d='M2,13.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,13.5,2,13.5z'>
+                                </path>
+                                <path
+                                    d='M2,28.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,28.5,2,28.5z'>
+                                </path>
+                                <path
+                                    d='M2,43.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,43.5,2,43.5z'>
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class='search-bar'>
+                        <input placeholder='Search' type='text'>
+                    </div>
+                </div>
+            </div>
+            <div class='bottom notification'>
+                <div class='container'>
+                    <div class='profile-wrap'>
+                        <div class='avatar' style="background: url('http://cdn.onlinewebfonts.com/svg/img_24787.png'); background-size: cover;"></div>
+                        <div class='user-info'>
+                            <div class='name'>!-!_username_!-!</div>
+                            <div class='rank'>!-!_grade_!-!</div>
+                        </div>
+                    </div>
+                    <div class='notify-wrap'>
+                        <div class='element'>
+                            <div class='text'>Notification</div>
+                            <div class='icon' id='notification'>
+                                <svg viewBox='0 0 47.834 47.834' x='0px' xmlns='http://www.w3.org/2000/svg' y='0px'>
+                                    <path
+                                        d="M46.878,41.834H0.956l0.005-1.005c0.021-4.065,2.87-7.548,6.759-8.437V20.697C7.72,11.766,14.985,4.5,23.916,4.5    c8.932,0,16.198,7.266,16.198,16.197v11.695c3.889,0.89,6.737,4.372,6.759,8.437L46.878,41.834z M3.042,39.834h41.75    c-0.458-2.908-2.804-5.241-5.8-5.61l-0.878-0.107V20.697c0-7.828-6.369-14.197-14.198-14.197C16.088,6.5,9.72,12.869,9.72,20.697    v13.419l-0.878,0.107C5.845,34.592,3.5,36.925,3.042,39.834z" />
+                                    <path
+                                        d="M21.125,5.988h-2V4.792C19.125,2.149,21.274,0,23.917,0c2.642,0,4.791,2.149,4.791,4.792v1.176h-2V4.792    C26.708,3.253,25.456,2,23.917,2c-1.539,0-2.792,1.253-2.792,2.792V5.988z" />
+                                    <path
+                                        d="M23.903,47.834c-3.941,0-7.375-2.799-8.164-6.656l1.959-0.4c0.6,2.93,3.209,5.057,6.205,5.057    c3.058,0,5.677-2.179,6.228-5.18l1.967,0.361C31.373,44.967,27.927,47.834,23.903,47.834z" />
+                                    <rect x="8.72" y="32.231" width="3.682" height="2" />
+                                    <rect x="18.167" y="32.231" width="20.947" height="2" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class='content'>
+                <div class='top'>
+                    <div class='name-box'>
+                        <span>Liste de la commande N°!-!_num_commande_!-!  /</span>
+                        <span onclick="document.location.href='/admin/finalise?!-!_table_name_!-!?!-!_token_!-!'" style="color: blue;cursor: pointer;">Finaliser la commande</span>
+                       
+                    </div>
+                    <div class='selected'>
+                        <span>Selected items:</span>
+                        <span id='amount'>0</span>
+                    </div>
+                    <div class='options' id='options' title='Options'>
+                        <svg viewBox='0 0 60 60' x='0px' xmlns='http://www.w3.org/2000/svg' y='0px'>
+                            <path d='M30,16c4.411,0,8-3.589,8-8s-3.589-8-8-8s-8,3.589-8,8S25.589,16,30,16z'></path>
+                            <path d='M30,44c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S34.411,44,30,44z'></path>
+                            <path d='M30,22c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S34.411,22,30,22z'></path>
+                        </svg>
+                        <ul class='dropdown' for='options' style='display:none'>
+                            <li id='select'>Select all</li>
+                            <li id='remove'>Remove</li>
+                            <li id='remove'>Add</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='list'>
+                    <ul class='items'>
+                        !-!_liste_item_!-!
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </section>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js'></script>
+    <script src="/admin/liste/script.js"></script>
+
+</body>
+
+</html>

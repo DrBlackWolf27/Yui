@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=VT323");
+body {
+  background: radial-gradient(circle at 0 0, #ecc6d8, #fec4c4, #feecce, #fff6c9, #ccfcc3, #b3bded);
+  height: 100vh;
+  width: 100vw;
+}
+
+h1 {
+  font-family: 'VT323', 'Courier New', monospace;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 150px;
+}
+
+[class*='parrot'] {
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.parrot-1 {
+  background-image: url("/add/back.png");
+}
+
+.parrot-2 {
+  background-image: url("/add/back.png");
+}
+
+.parrot-3 {
+  background-image: url("/add/back.png");
+}
+
+.parrot-4 {
+  background-image: url("/add/back.png");
+}
+
+.parrot-5 {
+  background-image: url("/add/back.png");
+}
+
+.parrot-6 {
+  background-image: url("/add/back.png");
+}
+
+.parrot-7 {
+  background-image: url("/add/back.png");
+}
+
+.parrot-8 {
+  background-image: url("/add/back.png");
+}
+
+.parrot-9 {
+  background-image: url("/add/back.png");
+}
+
+.parrot-10 {
+  background-image: url("/add/back.png");
+}
+
+.parrot-11 {
+  background-image: url("/add/back.png");
+}
+
+.parrot-12 {
+  background-image: url("/add/back.png");
+}
+
+.parrot-13 {
+  background-image: url("/add/back.png");
+}
+
+.parrot-14 {
+  background-image: url("/add/back.png");
+}
+
+.parrot-15 {
+  background-image: url("/add/back.png");
+}
+
+.parrot-16 {
+  background-image: url("/add/back.png");
+}
+
+.parrot-17 {
+  background-image: url("/add/back.png");
+}
+
+.parrot-18 {
+  background-image: url("/add/back.png");
+}
+
+.parrot-19 {
+  background-image: url("/add/back.png");
+}
+
+.parrot-20 {
+  background-image: url("/add/back.png");
+}

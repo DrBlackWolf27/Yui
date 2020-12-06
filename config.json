@@ -1,0 +1,188 @@
+
+{
+  "_comment": "Configuration du site",
+  "prefix_utilisation": "!-!_XXX_!-!",
+
+  "shop":{
+    "name": "Eco'Vet",
+    "Slogan": "Slogan du shop",
+    "logo": "files/logo.jpg",
+    "currency": "€",
+    "unique_tag": "gfezghr"
+  },
+  "couleurs": {
+    "couleur_primaire": "#7fca85",
+    "couleur_secondaire": "#cbe2c6"
+  },
+  "page_acceuil":{
+    "background_1":"files/header/back01.jpg",
+    "background_2":"files/header/back02.jpg",
+    "background_3":"files/header/back03.jpg",
+    "background_4":"files/header/back04.jpg",
+    "ville": [
+      {
+        "nom_ville": "Toulouse",
+        "click_and_collect": true,
+        "horaire_lundi": "De 10h00 à 19h00",
+        "horaire_mardi": "De 10h00 à 19h00",
+        "horaire_mercredi": "De 10h00 à 19h00",
+        "horaire_jeudi": "De 10h00 à 19h00",
+        "horaire_vendredi": "De 10h00 à 19h00",
+        "horaire_samedi": "De 9h00 à 20h00",
+        "horaire_dimanche": "Boutique Fermé"
+      }
+    ],
+    "facebook_link": "#",
+    "instagram_link": "#",
+    "twitter": "#"
+  },
+  "categories": [
+    {
+      "name": "T-SHIRT",
+      "description": "petite description",
+      "background_url": "files/produits/last_p1.png"
+    },
+    {
+      "name": "VESTE",
+      "description": "petite description",
+      "background_url": "files/produits/last_p2.png"
+    },
+    {
+      "name": "PENTALON",
+      "description": "petite description",
+      "background_url": "files/produits/last_p3.png"
+    }
+  ],
+  "about":[
+    {
+      "titre": "Eco Vet",
+      "background_image":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/130891/sagano.jpg",
+      "paragraphe_1": "Vente de vêtements  casual pour  homme 100 % fibres naturelles.",
+      "paragraphe_2": "Prix pour tous les budgets."
+    },
+    {
+      "titre": "Contact",
+      "background_image":"https://s3-us-west-2.amazonaws.com/s.cdpn.io/130891/sequoia.jpg",
+      "paragraphe_1": "mail : astrucM@gmail.com",
+      "paragraphe_2": "Tel : 0645983598"
+    }
+  ],
+  "click_and_collect":{
+    "infos": {
+      "lent":{
+        "heures": "24h00",
+        "description": "Vos produits sont disponible en magasin en 24h00",
+        "link_read_more": "URL",
+        "time_in_mili": "86400000"
+      },
+      "rapide":{
+        "heures": "5h00",
+        "description": "Vos produits sont disponible en magasin en 5h00",
+        "link_read_more": "URL",
+        "time_in_mili": "18000000"
+      },
+      "turbo":{
+        "heures": "2h00",
+        "description": "Vos produits sont disponible en magasin en 2h00",
+        "link_read_more": "URL",
+        "time_in_mili": "7200000"
+      }
+    },
+    "modalite": "les modalitées"
+  },
+  "liste_produits":{
+    "titre": "Eco Vet Search",
+    "eme2_titre": "Nos Produits",
+    "paragraphe_1": "<b>Matières utilisées :</b><br>- Le coton bio <br>- La fibre Ingeo<br>- Le chanvre<br>- Le cuir végétal <br>- Le lenpur   ",
+
+    "filtres":[
+      {
+        "categorie_name": "Tailles",
+        "liste":[
+          {
+            "name": "XS",
+            "type": "produits_vetements_tailles"
+          },
+          {
+            "name": "S",
+            "type": "produits_vetements_tailles"
+          },
+          {
+            "name": "M",
+            "type": "produits_vetements_tailles"
+          },
+          {
+            "name": "L",
+            "type": "produits_vetements_tailles"
+          },
+          {
+            "name": "XL",
+            "type": "produits_vetements_tailles"
+          },
+          {
+            "name": "XLL",
+            "type": "produits_vetements_tailles"
+          }
+        ]
+      }
+    ],
+    "footer_page":{
+      "colone1":{
+        "name":"Colone 1",
+        "liste_lien":[
+          {
+            "afficher": "j'aime les frittes",
+            "lien": "URL"
+          },
+          {
+            "afficher": "J'aimes les hot-dogs",
+            "lien": "URL"
+          }
+        ]
+      },
+      "colone2":{
+        "name":"Colone 2",
+        "liste_lien":[
+          {
+            "afficher": "Chui pas fan",
+            "lien": "URL"
+          }
+        ]
+      },
+      "colone3":{
+        "name":"Colone 3",
+        "liste_lien":[
+          {
+            "afficher": "Le 3 c ouf",
+            "lien": "URL"
+          },
+          {
+            "afficher": "Quoi que ?",
+            "lien": "URL"
+          },
+          {
+            "afficher": "Non si c ouf",
+            "lien": "URL"
+          },
+          {
+            "afficher": "wtf",
+            "lien": "URL"
+          }
+        ]
+      },
+      "colone4":{
+        "name":"Colone 4",
+        "liste_lien":[
+          {
+            "afficher": "bllblblblblblblbblbbb",
+            "lien": "URL"
+          },
+          {
+            "afficher": "oui ?",
+            "lien": "URL"
+          }
+        ]
+      }
+    }
+  }
+}

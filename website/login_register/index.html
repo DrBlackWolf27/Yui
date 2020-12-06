@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Eco'Vet Login</title>
+  <link rel="stylesheet" href="/login/style.css">
+
+</head>
+
+<body>
+  <div class="page">
+    <div class="container">
+      <div class="left">
+        <div class="login">Login</div>
+        <div class="eula">
+          <a href="/users" style="text-decoration: none;" class="eula">Clique ici apres avoir scanné le QR code</a><br>
+          <a href="/register" style="text-decoration: none;" class="eula"><br>Register ICI</a>
+        </div>
+      </div>
+      <div class="right">
+        <div class="form">
+          <h1 id="qr_code" style="margin-top: 2px;"></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/login/script.js"></script>
+  <script src="/login/qrcode.js"></script>
+  
+  <script type="text/javascript">
+    var tmp = "http://51.158.147.204:5000/add/qr/"+'!!REPME_Q_1'
+    var qrcode = new QRCode(document.getElementById("qr_code"), {
+      text: tmp,
+      width: 250,
+      height: 250,
+      colorDark : "#ffffff",
+      colorLight : "#474A59",
+      correctLevel : QRCode.CorrectLevel.H
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono|Quattrocento+Sans&display=swap");
+
+:root {
+  --primary-color: #feeae8;
+  --dark-pink: #fa7064;
+  --light-pink: #fac9c9;
+  --secondary-color-blue: #2955f4;
+  --alternate-color: #2955f4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  font-family: "Fira Mono", monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+}
+
+.flight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.flight h2 {
+  color: var(--secondary-color-blue);
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.circle {
+  background-color: var(--alternate-color);
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+
+.top-container {
+  background-color: var(--primary-color);
+  padding: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom: 3px solid var(--light-pink);
+}
+
+.top-container h1 {
+  color: var(--secondary-color-blue);
+  font-size: 2.5rem;
+  font-family: "Quattrocento Sans", sans-serif;
+  margin: 0 0 15px 0;
+}
+
+.top-container p {
+  color: var(--secondary-color-blue);
+  font-weight: bold;
+  margin: 15px 0 10px 0;
+}
+
+h4 {
+  border-top: 2px solid var(--light-pink);
+  color: var(--light-pink);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 5px;
+}
+
+.info-container {
+  display: grid;
+  grid-column-gap: 15px;
+  grid-template-areas:
+    "backup_key backup_key backup_key backup_key"
+    "time time version version"
+    "type type type type";
+}
+
+.backup_key {
+  grid-area: backup_key;
+}
+.time {
+  grid-area: time;
+}
+.version {
+  grid-area: version;
+}
+.type {
+  grid-area: type;
+}
+
+
+.bottom-container {
+  height: 380px;
+  background-color: var(--secondary-color-blue);
+  padding: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+.bottom-container h1 {
+  color: var(--light-pink);
+  font-size: 2.5rem;
+  font-family: "Quattrocento Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+.bottom-container p {
+  color: var(--light-pink);
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+.airport {
+  width: 190px;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  align-content: left;
+  align-self: left;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0 auto 0 0;
+  position: relative;
+}
+
+.square {
+  height: 15px;
+  width: 15px;
+}
+
+.left {
+  background-color: var(--alternate-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.right {
+  border: 1px solid var(--primary-color);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.middle {
+  border: 1px solid var(--alternate-color);
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.line {
+  width: 15px;
+  border: 1.5px solid var(--primary-color);
+  position: absolute;
+  top: 40%;
+  left: 0;
+}
+
+.polygon {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--alternate-color);
+  position: absolute;
+  top: 45%;
+  left: 40%;
+}
+
+.qr-code img {
+  width: 190px;
+  height: 190px;
+  background-color: var(--primary-color);
+  border: 3px solid var(--alternate-color);
+}
+
+.buttons {
+  width: 100%;
+  margin: 40px 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+.btn-add {
+  background-color: #ffffff;
+  padding: 10px 50px;
+  border-radius: 50px;
+  color: var(--secondary-color-blue);
+  font-size: 0.9rem;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<title>Ajouter un Produit</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="/admin/produits_add/style.css">
+
+</head>
+
+<body>
+
+  <form action="/admin/add_product" method="get">
+
+    <h1>Sign Up</h1>
+
+    <fieldset>
+      <legend><span class="number">1</span>Information Basiques</legend>
+      <label for="name">Nom du Produit:</label>
+      <input type="text" id="name" name="produit_name" autocomplete="off">
+
+      <label for="number">Prix du Produit:</label>
+      <input type="number" id="prix" name="produit_prix" autocomplete="off" value="0" min="0" max="10000">
+
+      <label for="image">Url de l'image:</label>
+      <input type="text" id="image" name="image" autocomplete="off">
+
+      <label for="shop">Shop du produit:</label>
+      <select id="shop" name="shop_produit">
+        !-!_liste_shop_!-!
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend><span class="number">2</span>Information</legend>
+      <label for="bio">Description:</label>
+      <textarea id="bio" name="user_bio"></textarea>
+      <label for="type">Type du produit:</label>
+      <select id="type" name="type_produit">
+        !-!_type_produit_!-!
+      </select>
+    </fieldset>
+    <button type="submit">Ajouter le produit</button>
+  </form>
+
+
+</body>
+
+</html>

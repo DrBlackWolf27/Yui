@@ -1,0 +1,179 @@
+
+{
+  "_comment": "Configuration du site",
+  "prefix_utilisation": "!>-<!_XXX_!>-<!",
+  "shop":{
+    "name": "Nom DU Shop",
+    "Slogan": "Slogan du shop",
+    "logo": "URL",
+    "currency": "€",
+    "unique_tag": "000"
+  },
+  "couleurs": {
+    "couleur_primaire": "code hexa",
+    "couleur_secondaire": "code hexa"
+  },
+  "page_acceuil":{
+    "background_1":"URL",
+    "background_2":"URL",
+    "background_3":"URL",
+    "background_4":"URL",
+    "ville": [
+      {
+        "nom_ville": "Nom De La ville",
+        "click_and_collect": "true ou false",
+        "horaire_lundi": "De XXHXX à XXhXX",
+        "horaire_mardi": "De XXHXX à XXhXX",
+        "horaire_mercredi": "De XXHXX à XXhXX",
+        "horaire_jeudi": "De XXHXX à XXhXX",
+        "horaire_vendredi": "De XXHXX à XXhXX",
+        "horaire_samedi": "De XXHXX à XXhXX",
+        "horaire_dimanche": "De XXHXX à XXhXX"
+      }
+    ],
+    "facebook_link": "#",
+    "instagram_link": "#",
+    "twitter": "#"
+  },
+  "categories": [
+    {
+      "name": "nom de la cat",
+      "description": "petite description",
+      "background_url": "URL"
+    },
+    {
+      "name": "nom de la cat",
+      "description": "petite description",
+      "background_url": "URL"
+    },
+    {
+      "name": "nom de la cat",
+      "description": "petite description",
+      "background_url": "URL"
+    }
+  ],
+  "about":[
+    {
+      "titre": "Le titre",
+      "background_image":"URL",
+      "paragraphe_1": "text",
+      "paragraphe_2": "text"
+    },
+    {
+      "titre": "Le titre",
+      "background_image":"URL",
+      "paragraphe_1": "text",
+      "paragraphe_2": "text"
+    }
+  ],
+  "click_and_collect":{
+    "infos": {
+      "lent":{
+        "heures": "XXHXX",
+        "description": "petite description",
+        "link_read_more": "URL",
+        "time_in_mili": "86400000"
+      },
+      "rapide":{
+        "heures": "XXHXX",
+        "description": "petite description",
+        "link_read_more": "URL",
+        "time_in_mili": "86400000"
+      },
+      "turbo":{
+        "heures": "XXHXX",
+        "description": "petite description",
+        "link_read_more": "URL",
+        "time_in_mili": "86400000"
+      }
+    },
+    "modalite": "les modalitées"
+  },
+  "liste_produits":{
+    "titre": "titre de la page",
+    "eme2_titre": "2eme titre",
+    "paragraphe_1": "petite description",
+    "filtres":[
+      {
+        "categorie_name": "name",
+        "liste":[
+          {
+            "name": "name",
+            "type": "type"
+          },
+          {
+            "name": "name",
+            "type": "type"
+          }
+        ]
+      },
+      {
+        "categorie_name": "name",
+        "liste":[
+          {
+            "name": "name",
+            "type": "type"
+          },
+          {
+            "name": "name",
+            "type": "type"
+          }
+        ]
+      }
+    ],
+    "footer_page":{
+      "colone1":{
+        "name":"nom de la col",
+        "liste_lien":[
+          {
+            "afficher": "texte a afficher",
+            "lien": "URL"
+          },
+          {
+            "afficher": "texte a afficher",
+            "lien": "URL"
+          }
+        ]
+      },
+      "colone2":{
+        "name":"nom de la col",
+        "liste_lien":[
+          {
+            "afficher": "texte a afficher",
+            "lien": "URL"
+          },
+          {
+            "afficher": "texte a afficher",
+            "lien": "URL"
+          }
+        ]
+      },
+      "colone3":{
+        "name":"nom de la col",
+        "liste_lien":[
+          {
+            "afficher": "texte a afficher",
+            "lien": "URL"
+          },
+          {
+            "afficher": "texte a afficher",
+            "lien": "URL"
+          }
+        ]
+      },
+      "colone4":{
+        "name":"nom de la col",
+        "liste_lien":[
+          {
+            "afficher": "texte a afficher",
+            "lien": "URL"
+          },
+          {
+            "afficher": "texte a afficher",
+            "lien": "URL"
+          }
+        ]
+      }
+    }
+  }
+}

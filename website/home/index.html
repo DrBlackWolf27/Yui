@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+   <meta charset="UTF-8">
+   <title>!-!_config.shop.name_!-! Home</title>
+   <link rel="stylesheet" href="/home/style.css">
+   <link rel="stylesheet" href="/home/style2.css">
+</head>
+
+<body>
+   <nav>
+      <i class="icon-menu">
+         <span></span>
+      </i>
+      <div class="main-nav">
+         <div class="menu">
+            <div class="menu-items">
+               <!--crée les liens interne au page du site-->
+               <a href="/liste_produit/norm" class="item">Tous les produits</a>
+               <a href="/liste_produit/panier" class="item">Mon panier</a>
+               <a href="/users" class="item">Mon compte</a>
+               <a href="/about" class="item">A propos de nous</a>
+            </div>
+         </div>
+      </div>
+   </nav>
+   <header>
+      <div class="main-heading">
+         <article>
+            <h1 class="site-title">!-!_config.shop.name_!-!</h1>
+         </article>
+         <div class="slide-container">
+            <!-- Tools pour le slide-->
+            <div class="slide-wrapper">
+               <!-- actuel -->
+               <div class="slide active">
+                  <img src="" alt="" data-id="">
+               </div>
+               <!-- suivant -->
+               <div class="slide next">
+                  <img src="" alt="" data-id="">
+               </div>
+            </div>
+            <div class="slide-arrows">
+               <!-- Dans le cas d'un besoin de button -->
+               <div class="button-prev"></div>
+               <div class="button-next"></div>
+            </div>
+            <div class="slide-bullets">
+               <span class="bullet selected" data-id="0"></span>
+               <span class="bullet" data-id="1"></span>
+               <span class="bullet" data-id="2"></span>
+               <span class="bullet" data-id="3"></span>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <div class="wrapper">
+      <section class="module tour-list">
+         <h3 class="section-title"><b>Infor<span>mations</span></b></h3>
+         <div class="content">
+            <ul class="shows">
+               <!-- Date / ville et infos-->
+               <li>
+                  <date>!-!_config.page_acceuil.ville.nom_ville_!-!</date>
+                  <p class="place">!-!_config.page_acceuil.ville.horaire_lundi_!-!</p>
+                  <p class="country">LUNDI</p>
+                  <div class="button-container">
+                     <a class="btn-rsvp" href="/about">coordonnés</a>
+                     !-!_config.page_acceuil.ville.click_and_collect_!-!
+                  </div>
+               </li>
+               <li>
+                  <date>!-!_config.page_acceuil.ville.nom_ville_!-!</date>
+                  <p class="place">!-!_config.page_acceuil.ville.horaire_mardi_!-!</p>
+                  <p class="country">Mardi</p>
+                  <div class="button-container">
+                     <a class="btn-rsvp" href="/about">coordonnés</a>
+                     !-!_config.page_acceuil.ville.click_and_collect_!-!
+                  </div>
+               </li>
+               <li>
+                  <date>!-!_config.page_acceuil.ville.nom_ville_!-!</date>
+                  <p class="place">!-!_config.page_acceuil.ville.horaire_mercredi_!-!</p>
+                  <p class="country">Mercredi</p>
+                  <div class="button-container">
+                     <a class="btn-rsvp" href="/about">coordonnés</a>
+                     !-!_config.page_acceuil.ville.click_and_collect_!-!
+                  </div>
+               </li>
+               <li>
+                  <date>!-!_config.page_acceuil.ville.nom_ville_!-!</date>
+                  <p class="place">!-!_config.page_acceuil.ville.horaire_jeudi_!-!</p>
+                  <p class="country">Jeudi</p>
+                  <div class="button-container">
+                     <a class="btn-rsvp" href="/about">coordonnés</a>
+                     !-!_config.page_acceuil.ville.click_and_collect_!-!
+                  </div>
+               </li>
+               <li>
+                  <date>!-!_config.page_acceuil.ville.nom_ville_!-!</date>
+                  <p class="place">!-!_config.page_acceuil.ville.horaire_vendredi_!-!</p>
+                  <p class="country">Vendredi</p>
+                  <div class="button-container">
+                     <a class="btn-rsvp" href="/about">coordonnés</a>
+                     !-!_config.page_acceuil.ville.click_and_collect_!-!
+                  </div>
+               </li>
+               <li>
+                  <date>!-!_config.page_acceuil.ville.nom_ville_!-!</date>
+                  <p class="place">!-!_config.page_acceuil.ville.horaire_samedi_!-!</p>
+                  <p class="country">Samedi</p>
+                  <div class="button-container">
+                     <a class="btn-rsvp" href="/about">coordonnés</a>
+                     !-!_config.page_acceuil.ville.click_and_collect_!-!
+                  </div>
+               </li>
+               <li>
+                  <date>!-!_config.page_acceuil.ville.nom_ville_!-!</date>
+                  <p class="place">!-!_config.page_acceuil.ville.horaire_dimanche_!-!</p>
+                  <p class="country">Dimanche</p>
+                  <div class="button-container">
+                     <a class="btn-rsvp" href="/about">coordonnés</a>
+                     !-!_config.page_acceuil.ville.click_and_collect_!-!
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+
+      <!-- les 3 categories -->
+      <section class="liste_categorie">
+         <h3 class="section-title"><span>Catégories</span><b>De Produits</b></h3>
+         <div class="content">
+            <a class="liste_categorie_item">
+               <p class="video-title">!-!_config.categories0.name_!-!</p>
+               <span class="video-icon"></span>
+               <img src="!-!_config.categories0.background_url_!-!" alt="">
+            </a>
+            <a class="liste_categorie_item">
+               <p class="video-title">!-!_config.categories1.name_!-!</p>
+               <span class="video-icon"></span>
+               <img src="!-!_config.categories1.background_url_!-!" alt="">
+            </a>
+            <a class="liste_categorie_item">
+               <p class="video-title">!-!_config.categories2.name_!-!</p>
+               <span class="video-icon"></span>
+               <img src="!-!_config.categories2.background_url_!-!" alt="">
+            </a>
+         </div>
+
+         <div class="modal-video">
+            <div class="wrapper-video">
+               <i class="close-video"></i>
+               <div class="main">
+                  <div class="house">
+                     <div class="floor"></div>
+                     <div class="wall">
+                        <div class="window"></div>
+                        <div class="door">
+                           <div class="door__square"></div>
+                           <div class="door__line"></div>
+                           <div class="door__square"></div>
+                        </div>
+                        <div class="window"></div>
+                     </div>
+                     <div class="top"></div>
+                     <div class="circle"></div>
+                     <div class="plastic">
+                        <div class="plastic__g">
+                           <div class="plastic__item"></div>
+                           <div class="plastic__item"></div>
+                           <div class="plastic__item"></div>
+                           <div class="plastic__item"></div>
+                           <div class="plastic__item"></div>
+                           <div class="plastic__item"></div>
+                           <div class="plastic__item"></div>
+                           <div class="plastic__item"></div>
+                           <div class="plastic__item"></div>
+                        </div>
+                     </div>
+                     <div class="line">
+                        <div class="line__item"></div>
+                        <div class="line__item"></div>
+                        <div class="line__item"></div>
+                        <div class="line__item"></div>
+                        <div class="line__item"></div>
+                        <div class="line__item"></div>
+                        <div class="line__item"></div>
+                        <div class="line__item"></div>
+                        <div class="line__item"></div>
+                     </div>
+                  </div>
+                  <div class="clouds">
+                     <div class="cloud">
+                        <div class="cloud__item"></div>
+                        <div class="cloud__item"></div>
+                     </div>
+                     <div class="cloud">
+                        <div class="cloud__item"></div>
+                        <div class="cloud__item"></div>
+                     </div>
+                     <div class="cloud">
+                        <div class="cloud__item"></div>
+                        <div class="cloud__item"></div>
+                     </div>
+                     <div class="bird"></div>
+                  </div>
+                  <div class="birds">
+                     <div class="bird"></div>
+                     <div class="bird"></div>
+                  </div>
+                  <div class="tree">
+                     <div class="tree__item"> </div>
+                     <div class="tree__item"> </div>
+                     <div class="tree__item"> </div>
+                  </div>
+                  <div class="bush">
+                     <div class="bush__item"></div>
+                     <div class="bush__item"></div>
+                  </div>
+                  <div class="dot"></div>
+               </div><br>
+               <p>Disponibe en magasin !</p>
+            </div>
+         </div>
+      </section>
+
+      <section class="module album">
+         <h3 class="section-title"><b>Dernier</b><span>Produits</span></h3>
+         <div class="content">
+            <div class="cover">
+               <div class="cover-img">
+                  <img src="!-!_config.shop.logo_!-!" alt="">
+               </div>
+            </div>
+            <div class="tracks">
+               <ul class="tracklist">
+                  !-!_liste_produit_!-!
+               </ul>
+         </div>
+      </section>
+
+      <section class="module follow">
+         <h3 class="section-title"><span>Suivez</span><b>Nous</b></h3>
+         <div class="content">
+            <div class="newsletter">
+               <p class="social-title">Newsletter</p>
+               <img src="/home/newsletter.jpg" alt="">
+               <div class="form"><input type="text" placeholder="email">
+                  <i class="send"></i>
+               </div>
+            </div>
+            <div class="social">
+               <p class="social-title">Social</p>
+               <div class="social-icons">
+                  <a class="network" href="#">
+                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M40.014 6H7.986C6.8895 6 6 6.8895 6 7.986V40.014C6 41.112 6.8895 42 7.986 42H25.227V28.059H20.5335V22.6275H25.227V18.615C25.227 13.9665 28.068 11.4375 32.2155 11.4375C34.203 11.4375 35.9115 11.583 36.4095 11.649V16.509H33.528C31.278 16.509 30.84 17.5905 30.84 19.1655V22.632H36.216L35.5185 28.077H30.84V42H40.0125C41.112 42 42 41.112 42 40.014V7.986C42 6.8895 41.112 6 40.014 6Z" fill="white"/>
+                        </svg>
+                     <p class="social-name">facebook</p>
+                  </a>
+                  <a class="network" href="#">
+                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 6C19.11 6 18.4995 6.0225 16.5795 6.108C14.6625 6.198 13.3575 6.4995 12.21 6.945C11.0265 7.404 10.0215 8.0205 9.021 9.021C8.0205 10.0215 7.4025 11.025 6.945 12.21C6.4995 13.3575 6.1965 14.6625 6.108 16.5795C6.018 18.4995 6 19.11 6 24C6 28.89 6.0225 29.5005 6.108 31.4205C6.198 33.336 6.4995 34.6425 6.945 35.79C7.404 36.972 8.0205 37.9785 9.021 38.979C10.0215 39.978 11.025 40.5975 12.21 41.055C13.359 41.499 14.664 41.8035 16.5795 41.892C18.4995 41.982 19.11 42 24 42C28.89 42 29.5005 41.9775 31.4205 41.892C33.336 41.802 34.6425 41.499 35.79 41.055C36.972 40.596 37.9785 39.978 38.979 38.979C39.978 37.9785 40.5975 36.9765 41.055 35.79C41.499 34.6425 41.8035 33.336 41.892 31.4205C41.982 29.5005 42 28.89 42 24C42 19.11 41.9775 18.4995 41.892 16.5795C41.802 14.664 41.499 13.356 41.055 12.21C40.596 11.0265 39.978 10.0215 38.979 9.021C37.9785 8.0205 36.9765 7.4025 35.79 6.945C34.6425 6.4995 33.336 6.1965 31.4205 6.108C29.5005 6.018 28.89 6 24 6ZM24 9.24C28.8045 9.24 29.3775 9.264 31.275 9.3465C33.03 9.429 33.9825 9.72 34.6155 9.969C35.4585 10.2945 36.0555 10.6845 36.6885 11.313C37.317 11.943 37.707 12.5415 38.0325 13.3845C38.2785 14.0175 38.5725 14.97 38.652 16.725C38.7375 18.624 38.757 19.194 38.757 24C38.757 28.806 38.7345 29.3775 38.646 31.275C38.5545 33.03 38.262 33.9825 38.0145 34.6155C37.6785 35.4585 37.296 36.0555 36.666 36.6885C36.0375 37.317 35.43 37.707 34.596 38.0325C33.966 38.2785 32.9985 38.5725 31.2435 38.652C29.3325 38.7375 28.77 38.757 23.955 38.757C19.1385 38.757 18.576 38.7345 16.6665 38.646C14.91 38.5545 13.9425 38.262 13.3125 38.0145C12.459 37.6785 11.8725 37.296 11.244 36.666C10.6125 36.0375 10.209 35.43 9.894 34.596C9.6465 33.966 9.3555 32.9985 9.264 31.2435C9.1965 29.3535 9.1725 28.77 9.1725 23.9775C9.1725 19.1835 9.1965 18.5985 9.264 16.686C9.3555 14.931 9.6465 13.965 9.894 13.335C10.209 12.48 10.6125 11.895 11.244 11.2635C11.8725 10.635 12.459 10.23 13.3125 9.9165C13.9425 9.6675 14.889 9.375 16.644 9.285C18.5565 9.2175 19.119 9.195 23.9325 9.195L24 9.24ZM24 14.757C18.8925 14.757 14.757 18.897 14.757 24C14.757 29.1075 18.897 33.243 24 33.243C29.1075 33.243 33.243 29.103 33.243 24C33.243 18.8925 29.103 14.757 24 14.757ZM24 30C20.685 30 18 27.315 18 24C18 20.685 20.685 18 24 18C27.315 18 30 20.685 30 24C30 27.315 27.315 30 24 30ZM35.769 14.3925C35.769 15.585 34.8 16.5525 33.609 16.5525C32.4165 16.5525 31.449 15.5835 31.449 14.3925C31.449 13.2015 32.418 12.234 33.609 12.234C34.7985 12.2325 35.769 13.2015 35.769 14.3925Z" fill="white"/>
+                        </svg>
+                     <p class="social-name">instagram</p>
+                  </a>
+                  <a class="network" href="#">
+                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M43.9217 11.8107C42.4467 12.4489 40.8718 12.8836 39.2135 13.0821C40.9035 12.0798 42.2034 10.5 42.8184 8.61516C41.2334 9.52561 39.4769 10.1883 37.6069 10.5574C36.1137 8.98426 33.9854 8 31.6222 8C27.094 8 23.4225 11.6139 23.4225 16.066C23.4225 16.7058 23.4975 17.321 23.6342 17.9099C16.8178 17.5933 10.7764 14.3715 6.73322 9.501C6.02158 10.6854 5.62327 12.0617 5.62327 13.5611C5.62327 16.3662 7.07321 18.8318 9.26978 20.2803C7.92484 20.2377 6.65989 19.8735 5.5566 19.2698V19.3699C5.5566 23.2823 8.37815 26.5451 12.133 27.2883C11.4447 27.4703 10.7181 27.5688 9.97308 27.5688C9.44977 27.5688 8.94813 27.5196 8.44648 27.4277C9.4981 30.6315 12.5213 32.9674 16.1195 33.0331C13.3196 35.1968 9.77143 36.4862 5.94992 36.4862C5.29995 36.4862 4.65164 36.4485 4 36.3763C7.64818 38.663 11.9463 40 16.5945 40C31.6838 40 39.9252 27.7033 39.9252 17.0569C39.9252 16.714 39.9252 16.3679 39.9002 16.0234C41.5018 14.8931 42.9 13.4643 44 11.8435L43.9217 11.8107Z" fill="white"/>
+                        </svg>
+                     <p class="social-name">twitter</p>
+                  </a>
+               </div>
+               <img src="/home/social.jpg" alt="">
+            </div>
+         </div>
+      </section>
+   </div>
+
+   <footer>
+      <div class="content">
+         <article>
+            <p class="text">ChiFoulMi @ 2020 — all rights reserved<br>design by<span>ChiFoulMiTeam</span></p>
+         </article>
+      </div>
+   </footer>
+   <script src="/home/script.js"></script>
+</body>
+
+</html>

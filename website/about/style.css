@@ -1,0 +1,337 @@
+/* definition generale les elements*/
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+html {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q,
+blockquote {
+  quotes: none;
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+body {
+  background: #f5f5fd;
+  font-family: "ocr-b-std", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #f5cdc6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* la page en elle meme*/
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "acta-display", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  color: #2c0735;
+}
+
+h1 {
+  -moz-transition: opacity 0.5s cubic-bezier(0.65, 0.19, 0.08, 0.97);
+  -o-transition: opacity 0.5s cubic-bezier(0.65, 0.19, 0.08, 0.97);
+  -webkit-transition: opacity 0.5s cubic-bezier(0.65, 0.19, 0.08, 0.97);
+  transition: opacity 0.5s cubic-bezier(0.65, 0.19, 0.08, 0.97);
+  opacity: .75;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/130891/sagano.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-size: 56px;
+  margin-bottom: 22px;
+}
+
+p {
+  font-size: 13px;
+  line-height: 22px;
+  text-align: justify;
+  margin-bottom: 22px;
+}
+
+.icon {
+  font-size: 21px;
+}
+
+#main {
+  padding: 1em;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 66px;
+  margin-bottom: -66px;
+}
+
+#one,
+#two {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+}
+
+#one {
+  background: #f5f5fd;
+  -moz-transition: all 0.5s cubic-bezier(0.65, 0.19, 0.08, 0.97);
+  -o-transition: all 0.5s cubic-bezier(0.65, 0.19, 0.08, 0.97);
+  -webkit-transition: all 0.5s cubic-bezier(0.65, 0.19, 0.08, 0.97);
+  transition: all 0.5s cubic-bezier(0.65, 0.19, 0.08, 0.97);
+  text-align: center;
+}
+
+#one .bg {
+  content: "";
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/130891/sagano.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.75;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#one:hover {
+  background: rgba(245, 245, 253, 0);
+}
+
+#one:hover h1 {
+  opacity: 0;
+}
+
+#one h1 {
+  position: relative;
+  margin-top: -20px;
+  font-size: 750px;
+  font-size: 60vw;
+}
+
+@media (min-width: 1400px) {
+  #one h1 {
+    font-size: 838px;
+  }
+}
+
+#two {
+  background: #f5f5fd;
+  color: #78708e;
+}
+
+#two main {
+  padding: 0 20% 0 2em;
+}
+
+#two .pane.active {
+  -moz-animation: fade-in 1s 0 normal cubic-bezier(0.65, 0.19, 0.08, 0.97);
+  -webkit-animation: fade-in 1s 0 normal cubic-bezier(0.65, 0.19, 0.08, 0.97);
+  animation: fade-in 1s 0 normal cubic-bezier(0.65, 0.19, 0.08, 0.97);
+}
+
+.pane {
+  top: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.pane main {
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.pane.ng-enter,
+.pane.ng-leave {
+  -moz-transition: all 0.5s cubic-bezier(0.65, 0.19, 0.08, 0.97);
+  -o-transition: all 0.5s cubic-bezier(0.65, 0.19, 0.08, 0.97);
+  -webkit-transition: all 0.5s cubic-bezier(0.65, 0.19, 0.08, 0.97);
+  transition: all 0.5s cubic-bezier(0.65, 0.19, 0.08, 0.97);
+}
+
+#one .pane.ng-leave,
+#one .pane.ng-enter.ng-enter-active {
+  top: 0;
+}
+
+#one .pane.ng-enter {
+  top: -100%;
+}
+
+#one .pane.ng-leave.ng-leave-active {
+  top: 100%;
+}
+
+#two .pane.ng-leave,
+#two .pane.ng-enter.ng-enter-active {
+  top: 0;
+}
+
+#two .pane.ng-enter {
+  top: 100%;
+}
+
+#two .pane.ng-leave.ng-leave-active {
+  top: -100%;
+}
+
+#nav {
+  position: relative;
+  overflow: hidden;
+  background: #f5f5fd;
+  width: 100%;
+  height: 66px;
+}
+
+#nav li {
+  position: absolute;
+  text-align: center;
+}
+
+#nav li a {
+  display: block;
+  padding: 0 1em;
+  color: #2c0735;
+  text-decoration: none;
+  height: 66px;
+  line-height: 66px;
+}
+
+#nav li a .icon {
+  line-height: 66px;
+}
+
+#nav li.previous,
+#nav li.next {
+  background: white;
+  width: 150px;
+  z-index: 2;
+  bottom: 0;
+}
+
+#nav li.previous.ng-hide-add.ng-hide-add-active,
+#nav li.previous.ng-hide-remove.ng-hide-remove-active,
+#nav li.next.ng-hide-add.ng-hide-add-active,
+#nav li.next.ng-hide-remove.ng-hide-remove-active {
+  -moz-transition: all 0.5s cubic-bezier(0.65, 0.19, 0.08, 0.97);
+  -o-transition: all 0.5s cubic-bezier(0.65, 0.19, 0.08, 0.97);
+  -webkit-transition: all 0.5s cubic-bezier(0.65, 0.19, 0.08, 0.97);
+  transition: all 0.5s cubic-bezier(0.65, 0.19, 0.08, 0.97);
+}
+
+#nav li.previous.ng-hide,
+#nav li.next.ng-hide {
+  bottom: -66px;
+}
+
+#nav li.previous {
+  left: 0;
+}
+
+#nav li.next {
+  right: 0;
+}
+
+#nav li.numbers {
+  z-index: 0;
+  width: 100%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+#nav li.numbers a {
+  display: inline;
+}
+
+#nav li.numbers a.active {
+  color: #858ae3;
+}
+
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opactiy: 1;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opactiy: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opactiy: 1;
+  }
+}

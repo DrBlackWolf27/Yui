@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>!-!_config.shop.name_!-! Produit</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="/produits/square/style.css">
+
+</head>
+
+<body>
+  <svg id="icons" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-arrow" viewBox="0 0 476.213 476.213">
+      <polygon fill="inherit" points="347.5,324.393 253.353,418.541 253.353,0 223.353,0 223.353,419.033 128.713,324.393 107.5,345.607 
+	238.107,476.213 368.713,345.606 " />
+    </symbol>
+  </svg>
+
+
+  <div class="slider-content">
+
+    <div class="header-wrapper">
+      <div class="header">
+        <div class="menu-wrapper">
+          <div class="menu-hamburger"></div>
+          <div class="menu-txt" onclick="document.location.href='/liste_produit/norm'">Go Back</div>
+        </div>
+        <div class="logo-wrapper">
+          <div class="logo"><span>!-!_config.shop.name_!-!</span></div>
+        </div>
+        <div class="shop-wrapper"></div>
+      </div>
+    </div>
+
+
+    <div class="nav-wrapper">
+      <div class="nav-arrows">
+        <div class="nav-up">
+          <svg id="arrow-up">
+            <use xlink:href="#icon-arrow"></use>
+          </svg>
+        </div>
+        <div class="nav-line"></div>
+        <div class="nav-down">
+          <svg id="arrow-down">
+            <use xlink:href="#icon-arrow"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-wrapper">
+      <div class="slider-container">
+        <div class="slide active" data-order="1">
+          <div class="slide-content txt">
+            <div class="txt-wrapper">
+              <span class="copy">!-!_product_error_!-!</span>
+              <h2><span>!-!_product_name_!-!</span></h2>
+              <p class="excerpt">!-!_product_description_!-!</p>
+              <button onclick="document.location.href='!-!_add_product_!-!'">Ajouter a mon Panier</button>
+            </div>
+          </div>
+          <div class="slide-content img">
+            <img src="!-!_product_url_!-!" alt="" />
+          </div>
+        </div>
+        <div class="slide " data-order="2">
+          <div class="slide-content txt">
+            <div class="txt-wrapper">
+              <span class="copy">PRODUITS TAGS</span>
+              <ul>
+                <li>
+                  <div class="post-wrapper">
+                    <div class="post-title"><a href="">Liste des tailles disponibles</a></div>
+                    <br>
+                    <div class="post-info" style="color:rgb(1, 68, 250)">
+                      <ul>
+                       !-!_liste_taille_produits_!-!
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+          <div class="slide-content img">
+            <img src="!-!_product_url_!-!" alt="" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer">
+      <div class="social-wrapper">
+        <ul>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/liste_produit/norm">Liste Produits</a></li>
+          <li><a href="/users">Mon Compte</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
+  <script src="/produits/square/script.js"></script>
+
+</body>
+
+</html>

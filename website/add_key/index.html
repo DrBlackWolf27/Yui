@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Add Key</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="top-container">
+      <h1>!-!_shopname_!-!</h1>
+      <div class="flight">
+        <h2>Add Key space</h2>
+        <div class="circle"></div>
+      </div>
+      <div class="info-container">
+        <div class="backup_key">
+          <p>!-!_backup_!-!</p>
+          <h4>{backup Key}</h4>
+        </div>
+        <div class="time">
+          <p>!-!_hour_!-!:!-!_min_!-!</p>
+          <h4>time Time</h4>
+        </div>
+        <div class="version">
+          <p>AA-33</p>
+          <h4>version</h4>
+        </div>
+        <div class="type">
+          <p>Phone Add</p>
+          <h4>type</h4>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-container">
+      <div class="airport">
+        <div>
+          <h1>QR</h1>
+          <p>Scanne le Qr</p>
+        </div>
+        <div>
+          <h1>Phone</h1>
+          <p>Et ajoute ton tel</p>
+        </div>
+        <div class="square left"></div>
+        <div class="square right"></div>
+        <div class="square middle"></div>
+        <div class="polygon"></div>
+        <div class="line"></div>
+      </div>
+      <div class="qr-code">
+        <div id="qr_code"></div>
+      </div>
+      <div class="buttons">
+        <center>
+          <button onclick="document.location.href='/home'" class="btn-add">Go Home</button>
+        </center>
+      </div>
+    </div>
+  </div>
+  <script src="/login/qrcode.js"></script>
+  <script>
+    var tmp = "http://51.158.147.204:5000/add/" + '!-!_qrcode_!-!'
+    var qrcode = new QRCode(document.getElementById("qr_code"), {
+      text: tmp,
+      width: 250,
+      height: 250,
+      colorDark: "#ffffff",
+      colorLight: "#2955f4",
+      correctLevel: QRCode.CorrectLevel.H
+    });
+  </script>
+</body>
+
+</html>
