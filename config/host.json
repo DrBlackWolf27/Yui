@@ -4,17 +4,17 @@
   "host": [
     {
       "website_name": "Eco'Vet",
-      "website_url": "51.158.147.204:5000",
+      "website_url": "51.158.147.204:5001",
       "website_default": true,
       "website_config_file": "default",
       "tor_network_code": 0
     },
     {
-      "website_name": "Eat Slow",
-      "website_url": "51.158.147.204:5001",
+      "website_name": "Eco'Vet",
+      "website_url": "127.0.0.1:5000",
       "website_default": false,
       "website_config_file": "/config2",
-      "tor_network_code": 2
+      "tor_network_code": 0
     }
   ]
 }

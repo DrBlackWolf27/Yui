@@ -131,11 +131,11 @@
         "name":"Colone 1",
         "liste_lien":[
           {
-            "afficher": "j'aime les frittes",
+            "afficher": "contenu colonne 1",
             "lien": "URL"
           },
           {
-            "afficher": "J'aimes les hot-dogs",
+            "afficher": "contenu colonne 1",
             "lien": "URL"
           }
         ]
@@ -144,7 +144,7 @@
         "name":"Colone 2",
         "liste_lien":[
           {
-            "afficher": "Chui pas fan",
+            "afficher": "contenu colonne 2",
             "lien": "URL"
           }
         ]
@@ -153,19 +153,19 @@
         "name":"Colone 3",
         "liste_lien":[
           {
-            "afficher": "Le 3 c ouf",
+            "afficher": "contenu colonne 3",
             "lien": "URL"
           },
           {
-            "afficher": "Quoi que ?",
+            "afficher": "contenu colonne 3",
             "lien": "URL"
           },
           {
-            "afficher": "Non si c ouf",
+            "afficher": "contenu colonne 3",
             "lien": "URL"
           },
           {
-            "afficher": "wtf",
+            "afficher": "contenu colonne 3",
             "lien": "URL"
           }
         ]
@@ -174,11 +174,11 @@
         "name":"Colone 4",
         "liste_lien":[
           {
-            "afficher": "bllblblblblblblbblbbb",
+            "afficher": "contenu colonne 4",
             "lien": "URL"
           },
           {
-            "afficher": "oui ?",
+            "afficher": "contenu colonne 4",
             "lien": "URL"
           }
         ]
