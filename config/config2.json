@@ -40,17 +40,17 @@
     {
       "name": "Bonnet",
       "description": "petite description",
-      "background_url": "files/conf2/header/header-1.jpg"
+      "background_url": "files/conf2/header/header-2.jpg"
     },
     {
       "name": "Gants",
       "description": "petite description",
-      "background_url": "files/conf2/header/header-2.jpg"
+      "background_url": "files/conf2/header/header-5.jpg"
     },
     {
       "name": "Echarpe",
       "description": "petite description",
-      "background_url": "files/conf2/header/header-3.jpg"
+      "background_url": "files/conf2/header/header-4.jpg"
     }
   ],
   "about":[
