@@ -223,7 +223,7 @@ export class page_liste_produit {
 
           //contitution requette sql 2
           if (sql_the_big_one === sql_the_big_one0) {
-            temp_value_sql2 = temp_value_sql2.replace("token='0' {token} AND", '')
+            temp_value_sql2 = temp_value_sql2.replace("token='0'  AND", '')
           } else {
             try {
               var sql_final0 = await database_query.query_select(sql_the_big_one)
@@ -241,6 +241,8 @@ export class page_liste_produit {
             }
           }
           
+          temp_value_sql2 = temp_value_sql2.replace(/{token}/g, "")
+
           try {
             var sql_final = await database_query.query_select(temp_value_sql2)
             if (sql_final.length == 0) {
